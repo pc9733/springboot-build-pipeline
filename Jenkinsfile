@@ -72,7 +72,7 @@ pipeline {
    stage('Stage VII: Scan Image ') {
       steps { 
         echo "Scanning Image for Vulnerabilities"
-        sh "trivy image --scanners vuln --skip-java-db-update --offline-scan piyush9734/democicd:latest > trivyresults.txt"
+        sh "trivy image --scanners vuln --offline-scan piyush9734/democicd:latest > trivyresults.txt"
         }
     }
           
