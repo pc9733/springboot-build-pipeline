@@ -16,7 +16,7 @@ pipeline {
    stage('Stage I: Build') {
       steps {
         echo "Building Jar Component ..."
-        sh "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64; mvn clean package "
+        sh "export JAVA_HOME=java-1.8.0-amazon-corretto.x86_64; mvn clean package "
       }
     }
 
